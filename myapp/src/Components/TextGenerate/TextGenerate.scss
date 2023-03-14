@@ -1,0 +1,75 @@
+@use '../../App';
+@use '../Styles.scss';
+@use 'three-dots';
+
+.textGenerator{
+    @include Styles.generator;
+   
+    .textContainer{
+        @include Styles.generator-container;
+        margin: auto auto 1rem auto;
+        // padding-bottom: 0;
+        .messageContent{
+            @include Styles.messageContent;
+
+            .searchMsg{
+                margin-bottom: 0.5rem;
+            }
+            .typingContainer{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: start;
+                padding: 0;
+                .iconContainer{
+                    display: flex;
+                }
+                .resultIcon{
+                    font-size: 1.3rem;
+                    color: #fdfcfc;
+                }
+
+                .textContainer {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    text-align: start;
+                    margin-left: 1.2rem;
+                    width: 100%;
+                  }
+            }
+          
+                font-size: larger;
+                margin-right: 1rem;
+            }
+
+        }
+
+
+        .controlBtn{
+            @include Styles.controlBtn;
+        }
+        
+        .typewriter{
+            font-size: large;
+            margin: 1rem ;
+          
+        }
+       
+        .Typewriter span.Typewriter__cursor{
+                display: none ;
+            }
+        
+        .input{
+         @include Styles.input;
+         height: 50px;
+        }
+
+        .btn{
+           @include Styles.btn;
+           
+        }
+        .btnEffect{
+            @include Styles.btnEffect;
+        }
+    }
