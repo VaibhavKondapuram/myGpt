@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500&display=swap');
+*{
+  font-family: 'Noto Sans Lao', sans-serif;
+}
+
+// $primary-color: rgb(240, 240, 240);
+$primary-color: linear-gradient(to top, #ffffff 0%, #838383 174%);
+
+body{
+  background: $primary-color;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+}
